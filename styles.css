@@ -1,4 +1,6 @@
-
+body {
+    margin: 0px;
+}
 h1 {
     font-family: 'Prosto One', cursive;
 }
@@ -165,7 +167,7 @@ img {
 #fl {
     /* position: relative; */
 }
-.frame {
+.frame-feed {
     position: relative;
     width: fit-content;
     height: fit-content; 
@@ -241,47 +243,56 @@ img {
     width: 650px;
     height: 200px;
 }
+
+/* Gallery Box */
 .space {
     display: flex;
     justify-content: center;
 }
-.galery {
+
+.gallery {
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
 
-#section {
-    width: 240px;
-    height: 240px;
-    position: ;
-    
-}
-.window {
-    position:relative;
-    transition: width 2s;
-    left: -2px;
+.row {
+    display: flex;
+    gap: 5px;
 }
 
-.t-window {
+#section {
+    width: 240px;
+    height: 240px;    
+}
+
+.frame-gallery {
+    position:relative;
+    /* transition: width 2s; */
+    left: -2px;
+    background-color: aqua;
+}
+
+.t-frame-gallery {
     position: absolute;
     width: 240px;
     height: 180px;
     top: 0px;
 }
-.b-window {
+.b-frame-gallery {
     position: absolute;
     width: 240px;
     height: 60px;
     bottom: 4px;
 }
 
-.window:hover > .t-window{
+.frame-gallery:hover > .t-frame-gallery{
     background-color: aquamarine;
     animation-name: t-enclosure;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
 }
+
 @keyframes t-enclosure {
     0%{
         height: 0px;
@@ -292,7 +303,7 @@ img {
         opacity: 0.5;
     }
 }
-.window:hover > .b-window {
+.frame-gallery:hover > .b-frame-gallery {
     background-color: aliceblue;
     animation: b-enclosure 0.5s forwards;
 }
@@ -305,19 +316,4 @@ img {
         height: 60px;
         opacity: 0.8;
     }
-}
-
-.fr {
-    display: flex;
-    gap: 5px;
-}
-.sr {
-    display: flex;
-    gap: 5px;
-
-}
-.tr {
-    display: flex;
-    gap: 5px;
-
 }
