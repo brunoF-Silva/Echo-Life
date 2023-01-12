@@ -128,74 +128,89 @@
         <h2>Mais das nossas ações:</h2>
         <div class="space">
             <div class="gallery">
-
                 <div class="row">
                     <div class="frame-gallery">
                         <img id="section" src="./img/dolphins.jpg" alt="">
-                        <div class="t-frame-gallery"></div>
-                        <div class="b-frame-gallery"></div>
+                        <div id="curtain-1" class="t-frame-gallery"></div>
+                        <div id="curtain-2" class="b-frame-gallery"></div>
                     </div>
 
                     <div id="sec" class="frame-gallery">
                         <img id="section" src="./img/butterfly.jpg" alt="">
-                        <div class="t-frame-gallery"></div>
-                        <div class="b-frame-gallery"></div>
+                        <div id="curtain-3" class="t-frame-gallery"></div>
+                        <div id="curtain-4" class="b-frame-gallery"></div>
                     </div>
 
                     <div class="frame-gallery">
                         <img id="section" src="./img/sand.jpg" alt="">
-                        <div class="t-frame-gallery"></div>
-                        <div class="b-frame-gallery"></div>
+                        <div id="curtain-5" class="t-frame-gallery"></div>
+                        <div id="curtain-6" class="b-frame-gallery"></div>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="frame-gallery">
                         <img id="section" src="./img/marine life.jpg" alt="">
-                        <div class="t-frame-gallery"></div>
-                        <div class="b-frame-gallery"></div>
+                        <div id="curtain-7" class="t-frame-gallery"></div>
+                        <div id="curtain-8" class="b-frame-gallery"></div>
                     </div>
-
                     <div class="frame-gallery">
                         <img id="section" src="./img/elephant.jpg" alt="">
-                        <div class="t-frame-gallery"></div>
-                        <div class="b-frame-gallery"></div>
+                        <div id="curtain-9" class="t-frame-gallery"></div>
+                        <div id="curtain-10" class="b-frame-gallery"></div>
                     </div>
 
                     <div class="frame-gallery">
                         <img id="section" src="./img/coral.jpg" alt="">
-                        <div class="t-frame-gallery"></div>
-                        <div class="b-frame-gallery"></div>
+                        <div id="curtain-11" class="t-frame-gallery"></div>
+                        <div id="curtain-12" class="b-frame-gallery"></div>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="frame-gallery">
                         <img id="section" src="./img/food.jpg" alt="">
-                        <div class="t-frame-gallery"></div>
-                        <div class="b-frame-gallery"></div>
+                        <div id="curtain-13" class="t-frame-gallery"></div>
+                        <div id="curtain-14" class="b-frame-gallery"></div>
                     </div>  
 
                     <div class="frame-gallery">
                         <img id="section" src="./img/fire.jpg" alt="">
-                        <div class="t-frame-gallery"></div>
-                        <div class="b-frame-gallery"></div>
+                        <div id="curtain-15" class="t-frame-gallery"></div>
+                        <div id="curtain-16" class="b-frame-gallery"></div>
                     </div>
                     
                     <div class="frame-gallery">
                         <img id="section" src="./img/reciclar.webp" alt="">
-                        <div class="t-frame-gallery"></div>
-                        <div class="b-frame-gallery"></div>
+                        <div id="curtain-17" class="t-frame-gallery"></div>
+                        <div id="curtain-18" class="b-frame-gallery"></div>
                     </div>
 
                 </div>
                 <h3>Torne-se um membro</h3>
                 <script>
-                    Hello()
-                </script>
+                    Hello();
+                    </script>
         </div>
         </div>
     </div>
-    <div class="foother"></div>
+    <div class="foother">
+        <script>
+            Roda();
+            Hello();
+        </script>
+
+        <div onLoad="this.animation='spin2 1s linear infinite'" id="cube"></div>
+        <script>
+            Roda();
+        </script>
+
+        <div id="cube1"></div>
+        <script>
+            document.getElementById("cube1").style.animation ="spin2 1s 1s linear infinite";
+        </script>
+
+
+    </div>
 </body>
 </html>

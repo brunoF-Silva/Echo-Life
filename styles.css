@@ -1,4 +1,4 @@
-body {
+* {
     margin: 0px;
 }
 h1 {
@@ -261,59 +261,194 @@ img {
     gap: 5px;
 }
 
-#section {
-    width: 240px;
-    height: 240px;    
-}
 
 .frame-gallery {
-    position:relative;
+    position: relative;
     /* transition: width 2s; */
-    left: -2px;
+    /* left: -2px; */
     background-color: aqua;
 }
 
+#section {
+    width: 240px;
+    height: 240px; 
+    /*position: relative descarta .frame-gallery aqui não funciona*/
+}
 .t-frame-gallery {
     position: absolute;
     width: 240px;
     height: 180px;
     top: 0px;
+    /* background-color: yellow; */
 }
 .b-frame-gallery {
     position: absolute;
     width: 240px;
     height: 60px;
     bottom: 4px;
+    /* background-color: red; */
 }
 
 .frame-gallery:hover > .t-frame-gallery{
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     animation-name: t-enclosure;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
-}
+} 
 
 @keyframes t-enclosure {
     0%{
         height: 0px;
         opacity: 0;
+        background-color: aqua;
     }
-    100%{
+    2.75%{
         height: 180px;
         opacity: 0.5;
+        background-color: aqua;
+        
     }
-}
-.frame-gallery:hover > .b-frame-gallery {
-    background-color: aliceblue;
-    animation: b-enclosure 0.5s forwards;
+    8.25%{
+        height: 180px;
+        opacity: 0.5;
+        background-color: aqua;
+    }
+    
+    11%{
+        height: 0px;
+    }
+    
+    100%{
+        height: 0px;
+    }
 }
 @keyframes b-enclosure {
     0%{
         height: 0px;
         opacity: 0;
+        background-color: aliceblue;
     }
-    100%{
+    2.75%{
         height: 60px;
-        opacity: 0.8;
+        opacity: 0.5;
+        background-color: aliceblue;
+
+    }
+    8.25%{
+        height: 60px;
+        opacity: 0.5;
+        background-color: aliceblue;
+    }
+
+    11%{
+        height: 0px;
+    }
+
+    100%{
+        height: 0px;
     }
 }
+#curtain-1 {
+    animation: t-enclosure 45s 0s infinite;
+}
+#curtain-2 {
+    animation: b-enclosure 45s 0s infinite;
+}
+#curtain-9 {
+    animation: t-enclosure 45s infinite;
+    animation-delay: 5s;
+}
+#curtain-10 {
+    animation: b-enclosure 45s infinite;
+    animation-delay: 5s;
+}
+#curtain-5 {
+    animation: t-enclosure 45s infinite;
+    animation-delay: 10s;
+}
+#curtain-6 {
+    animation: b-enclosure 45s infinite;
+    animation-delay: 10s;
+}
+#curtain-13 {
+    animation: t-enclosure 45s infinite;
+    animation-delay: 15s;
+}
+#curtain-14 {
+    animation: b-enclosure 45s infinite;
+    animation-delay: 15s;
+}
+#curtain-17 {
+    animation: t-enclosure 45s infinite;
+    animation-delay: 20s;
+}
+#curtain-18 {
+    animation: b-enclosure 45s infinite;
+    animation-delay: 20s;
+}
+#curtain-7 {
+    animation: t-enclosure 45s infinite;
+    animation-delay: 25s;
+}
+#curtain-8 {
+    animation: b-enclosure 45s infinite;
+    animation-delay: 25s;
+}
+#curtain-11 {
+    animation: t-enclosure 45s infinite;
+    animation-delay: 30s;
+}
+#curtain-12 {
+    animation: b-enclosure 45s infinite;
+    animation-delay: 30s;
+}
+#curtain-15 {
+    animation: t-enclosure 45s infinite;
+    animation-delay: 35s;
+}
+#curtain-16 {
+    animation: b-enclosure 45s infinite;
+    animation-delay: 35s;
+}
+#curtain-3 {
+    animation: t-enclosure 45s infinite;
+    animation-delay: 40s;
+}
+#curtain-4 {
+    animation: b-enclosure 45s infinite;
+    animation-delay: 40s;
+}
+.frame-gallery:hover > .b-frame-gallery {
+    /* background-color: aliceblue; */
+    animation: b-enclosure 0.5s forwards;
+}
+/* @media (prefers-reduced-motion: no-preference) {
+    .t-frame-gallery{
+        background-color: aquamarine;
+        animation-name: t-enclosure;
+        animation-duration: 0.5s;
+        animation-iteration-count: infinite;
+    }
+} */
+/* .t-frame-gallery {
+    animation-name: none;
+    height: 0px;
+} */
+.div.frame-gallery. {
+
+}
+#cube {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    animation: spin1 8s linear infinite;
+}
+#cube1 {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    animation: spin1 8s linear infinite;
+}
+@keyframes spin1 { 100% { transorm:rotate(450deg); } }
+@keyframes spin2 { 100% { transform:rotate(-450deg); } }
+@keyframes idle { 100% {} }
